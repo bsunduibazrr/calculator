@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuvcas</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        background-color: #222;
+        font-family: sans-serif;
+        padding: 50px;
+      }
+
+      .position {
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        gap: 20px;
+      }
+
+      .faq-item {
+        background: #333;
+        border-radius: 10px;
+        padding: 15px 20px;
+        color: white;
+        max-width: 700px;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .faq-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .last {
+        font-size: 16px;
+      }
+
+      .toggle-btn {
+        font-size: 20px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-answer {
+        display: none;
+        margin-top: 10px;
+        color: #ccc;
+        font-size: 14px;
+      }
+
+      .faq-item.open .faq-answer {
+        display: block;
+      }
+
+      .faq-item.open .toggle-btn {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="flex">
+        <p class="text">Тавтай морил</p>
+        <div style="display: flex; gap: 50px; align-items: center">
+          <p class="text">Холбоо барих</p>
+          <p style="font-size: 30px; color: white">/</p>
+          <p class="text">Салбарууд</p>
+          <p style="font-size: 30px; color: white">/</p>
+          <p class="text">Ажлын байр</p>
+          <p style="font-size: 30px; color: white">/</p>
+
+          <div style="gap: 10px; display: flex; align-items: center">
+            <button class="circle2">IG</button>
+            <button class="circle2">FB</button>
+            <button class="circle2">YT</button>
+            <img
+              class="icons"
+              src="https://images.icon-icons.com/1222/PNG/512/1492616968-18-google-translate-text-language-translation_83413.png"
+              alt=""
+            />
+            <p class="text">Орчуулах</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top: 1px">
+      <div class="header">
+        <div class="flex" style="align-items: center">
+          <img
+            class="icon"
+            src="https://cdn.zochil.shop/de1085c9-9677-4409-ba7b-372736043a97_t700.jpg"
+            alt=""
+          />
+          <div style="display: flex; gap: 20px">
+            <p class="text">Бүгд</p>
+            <p class="text">Хувцас</p>
+          </div>
+          <div style="display: flex; gap: 20px">
+            <img
+              class="icons"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZm3v3wgtbj1dsIc6PLyU7NE6h38QFW_KpaQ&s"
+              alt=""
+            />
+            <img
+              class="icons"
+              src="https://www.citypng.com/public/uploads/preview/hd-shopping-cart-white-logo-icon-transparent-png-701751694973936amdcratijm.png"
+              alt=""
+            />
+            <img
+              class="icons"
+              src="https://www.citypng.com/public/uploads/preview/white-user-member-guest-icon-png-image-701751695037005zdurfaim0y.png?v=2025062009"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top: 1px">
+      <img
+        style="width: 100%"
+        src="https://cdn.zochil.shop/1b996622-930f-40ef-99cf-b4a9842d9303.jpg"
+        alt=""
+      />
+    </div>
+    <div class="header2">
+      <div style="display: flex; gap: 120px; justify-content: center">
+        <div>
+          <img
+            class="icon"
+            src="https://cdn.zochil.shop/e8c1966c-5629-4b21-8390-302e5b612dec_t500.jpg"
+            alt=""
+          />
+          <p class="text">Футболк</p>
+        </div>
+        <div>
+          <img
+            class="icon"
+            src="https://cdn.zochil.shop/32abdaad-d645-4fe6-8d51-9242006ba688_t500.jpg"
+            alt=""
+          />
+          <p class="text">
+            Малгайтай <br />
+            цамц
+          </p>
+        </div>
+        <div>
+          <img
+            class="icon"
+            src="https://cdn.zochil.shop/7337065c-bc3a-483f-8a3f-530007c50e23_t500.jpg"
+            alt=""
+          />
+          <p class="text">Бусад</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div
+        style="
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <button class="buttons">Онцлох</button>
+        <button class="buttons">Шинэ</button>
+        <button class="buttons">Бестселлер</button>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/64995ede-777e-4475-af85-386ce525154d_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            THE QUEEN ZIP-HOODIE • unisex <br />
+            229,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/5f85747d-71e6-4ef2-a821-26d561085ea7_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Oversized Tee pt.2 • unisex
+            <br />
+            99,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/a8dd6f13-f2fc-40bb-892c-2c5a7ccbc40f_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            THE QUEEN ZIP-HOODIE • unisex <br />
+            229,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/13410fc3-c894-427e-8e16-b035436ad351_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Нимгэн Hoodie • unisex <br />
+            189,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/88be2a0a-2d31-488a-a5b9-ac9626fa766c_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            THE QUEEN ZIP-HOODIE • unisex <br />
+            229,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/2117027c-db85-4781-851f-550dacabfe31_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Hoodie • unisex <br />
+
+            199,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/a71bf3ec-5ac1-4b7a-9c7e-cde56e7db46e_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Шорт new color (өвдөгнөөс дээш) • unisex <br />
+
+            99,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/4c0231d7-7066-4cbd-b32e-df3f943e7d07_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Petroglyph • unisex <br />
+
+            88,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/effa14e0-8884-4974-8de2-c41b21fd7d36_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Давгүй дээ • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/60026975-3d69-446d-99b7-4017d687b6eb_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Цахилгаантай цамц • unisex <br />
+
+            199,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/2ed0cbc2-4376-43d5-b39f-6349cac341cf_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Чихмэл тоглоом <br />
+
+            59,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/20262bfd-2738-448e-aca8-b534fd0d4a97_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Summer Sweatshirt • unisex <br />
+
+            189,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/3700dd71-d90f-402f-a4fc-e1a752eed5e6_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Slim-fit Crop T-shirt <br />
+
+            79,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/ca01ac96-9e28-4d00-aab9-6c7b076619f5_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Backpack <br />
+
+            109,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/25ca38ed-0bec-4bdc-bbf1-b3b879229e88_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Маргаашнаас яг ална • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div style="padding-left: 70px">
+        <button class="buttons">Бусад</button>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/76a11098-8c00-42f1-bf8d-7c2d2cfc2cdc_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Pants (Premium) • unisex <br />
+
+            179,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/a71bf3ec-5ac1-4b7a-9c7e-cde56e7db46e_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Шорт new color (өвдөгнөөс дээш) • unisex <br />
+
+            99,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/60026975-3d69-446d-99b7-4017d687b6eb_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            THE QUEEN ZIP-HOODIE • unisex <br />
+            229,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/2ed0cbc2-4376-43d5-b39f-6349cac341cf_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Чихмэл тоглоом <br />
+
+            59,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/f07a0706-d39c-45fa-81ba-c2089b5f5e44_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Summer Sweatshirt • unisex <br />
+
+            189,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/93b44066-cb9a-4b2d-8492-c6635fe4b925_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Бариу даашинз <br />
+
+            129,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/7512f719-a4a2-40f2-bff9-6ad4f441970f_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Цахилгаантай цамц (2 way) <br />
+
+            189,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/1548f32e-4f67-4546-b173-58fa5cc26f83_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Petroglyph • unisex <br />
+
+            88,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/ca01ac96-9e28-4d00-aab9-6c7b076619f5_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Backpack <br />
+
+            109,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/2f99b08c-2fb0-4b56-905f-1f8d102ad6ce_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Summer t-shirt • unisex <br />
+            99,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/b21540f0-3868-49cc-af93-f4ff805bec47_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Шорт (өвдөгнөөс дээш) • unisex <br />
+            99,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/a06cf036-ad92-4bcf-8a1b-4f699ff0bc23_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Шорт (өвдөгнөөс дээш) • unisex <br />
+            99,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/0ca8f214-c262-47e9-b0b3-0dc0b1888c32_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Slim-fit Crop T-shirt <br />
+
+            79,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/1d0bdc64-8b9b-4188-9044-ba8fe708cdfd_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text">
+            Jackets <br />
+
+            109,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/747ec4ea-e719-4a2d-91ea-c52879a99222_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Нимгэн цахиалгаантай цамц (ханцуйгүй) • unisex <br />
+
+            169,000₮
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div style="padding-left: 70px">
+        <button class="buttons">Малгайтай цамц</button>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/cc881c81-902c-4276-930b-878fd6b95f75_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Sunset Lover pt.2 • unisex <br />
+
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/0ee7c127-a602-4524-a76e-1f0c1af3a77e_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Golden Flight • unisex <br />
+
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/448e33c6-72ea-4e85-aae8-f1c58c17f00c_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Маргаашнаас яг ална • unisex <br />
+
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/7c79b473-d9f8-44af-80d7-8f8d91840cbd_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Heavenly • unisex <br />
+
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/acf3b67c-eb57-47ec-ae8b-60fb8c893753_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Game Over • unisex <br />
+
+            188,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/6d76e2a6-b7e6-4e1b-a0df-9acc3b2bba1c_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            HOODIE #2 • unisex <br />
+
+            189,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/5aa587cb-50f7-486c-9dd5-50bdfee24814_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Eye of the storm • unisex <br />
+
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/88e4cc1c-237a-483f-81bc-942c13d3bc43_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Эмэгтэй цахилгаантай цамц <br />
+
+            179,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/2e28c827-ba93-42e1-9bcf-d07b0810a382_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Beta Hoodie • unisex <br />
+
+            229,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/f2be0d4d-684c-4fb2-a357-43106cdf212d_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Mongol Hoodie • unisex <br />
+            229,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/0b93d7e9-599f-4fdc-83c9-cdea33f3c78a_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Eternal Wave • unisex <br />
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/fdd7903a-297a-47c1-9dd0-3fe86bfa6fa4_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Astronomy • unisex <br />
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/e6fa1530-a4c1-4e5d-9c20-97d7557f967a_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Flame Hoodie • unisex <br />
+            229,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/b3ea1bef-2770-4f4f-a560-1930b74ab7a3_t1500.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            БАЙЖИЙ • unisex <br />
+            188,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/c9a147fd-2ed1-482e-8355-29305827eb53_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            LINE Hoodie • unisex <br />
+            199,000₮
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div style="padding-left: 70px">
+        <button class="buttons">Футболк</button>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/5f85747d-71e6-4ef2-a821-26d561085ea7_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Oversized Tee pt.2 • unisex <br />
+
+            99,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/4c0231d7-7066-4cbd-b32e-df3f943e7d07_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Petroglyph • unisex <br />
+
+            88,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/4226f399-c79c-4b29-a92b-cae3827a8702_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Ганц хийчих • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/20262bfd-2738-448e-aca8-b534fd0d4a97_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Давгүй дээ • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/d0452d97-8b08-46b2-9831-a8ed8ceaa06c_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            To the moon tee (Oversized) • unisex <br />
+
+            99,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/db416db8-dd95-46e1-9312-eb117bdc769f_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            UB Sunset • unisex <br />
+
+            88,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/3700dd71-d90f-402f-a4fc-e1a752eed5e6_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Slim-fit Crop T-shirt <br />
+
+            79,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/88e9bbdd-dd1d-4fee-ade0-d97594e53128_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Optic • unisex <br />
+
+            109,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/ff5c4ece-6f8e-4eae-8d4c-898005757acd_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Send зүрх • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/d727afd9-2ba6-4986-a5cd-25a79054c14b_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Panda puff • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+      </div>
+      <div class="class">
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/25ca38ed-0bec-4bdc-bbf1-b3b879229e88_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Маргаашнаас яг ална • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/a394c82a-f181-4d5d-a4bd-56560a12ae07_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Том хүн шиг байх гэж хичээж байгаа • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/0b153dba-599a-481f-863c-bd05b241bc0d_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            sundawn • unisex <br />
+
+            88,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/abf84746-d939-4dd1-bbcb-b6fc2149897b_t700.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            Зүрхээ дагах гэтэл • unisex <br />
+
+            68,000₮
+          </p>
+        </div>
+        <div class="use">
+          <img
+            class="pics"
+            src="https://cdn.zochil.shop/2b1e23f6-8139-42df-841e-10ec1a84df2b_t1500.jpg"
+            alt="THE QUEEN ZIP-HOODIE"
+          />
+          <p class="text2">
+            KUVCAS PRO • unisex <br />
+
+            78,000₮
+          </p>
+        </div>
+      </div>
+      <div class="flex2">
+        <p class="textt">Түгээмэл асуулт</p>
+      </div>
+      <div style="padding-top: 40px" class="flex2">
+        <div class="header3">
+          <div class="position">
+            <div class="faq-item">
+              <div class="faq-header">
+                <p class="last">
+                  Худалдан авсан хувцсыг солиулах эсвэл буцааж болдог уу?
+                </p>
+                <button class="toggle-btn">&#9660;</button>
+              </div>
+              <div class="faq-answer">
+                Хэрэглэгч тухайн худалдаж авсан барааг 24-48 цагийн дотор
+                асуудалгүй тохиолдолд өнгө болон размерыг солиулах боломжтой
+                харин буцаах боломжгүй байдаг байгаа.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <p class="last">Танай салбар хаягууд хаан байрладаг бэ?</p>
+                <button class="toggle-btn">&#9660;</button>
+              </div>
+              <div class="faq-answer">
+                Манай салбарууд Peace Mall ийн 6 давхар, 607 тоот болон Tara
+                Center 2 давхар, B-235 тоотод байрлаж байна.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <p class="last">Хүргэлт хэр удаж байж ирдэг бэ?</p>
+                <button class="toggle-btn">&#9660;</button>
+              </div>
+              <div class="faq-answer">
+                Тухайн захиалсан бараа ачааллаас хамаарч Улаанбаатар хот болон
+                орон нутагт 24-48 цагийн дотор хүргэгдэх байгаа.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <p class="last">Танай загварууд unisex уу?</p>
+                <button class="toggle-btn">&#9660;</button>
+              </div>
+              <div class="faq-answer">
+                Манай загварууд unisex буюу эрэгтэй, эмэгтэй хүмүүс бүгд өмсөж
+                болохоор төлөвлөгдсөн байдаг байгаа.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <p class="last">
+                  Танай салбар дэлгүүрүүд хэд хүртэл ажилладаг бэ?
+                </p>
+                <button class="toggle-btn">&#9660;</button>
+              </div>
+              <div class="faq-answer">
+                Манай салбар дэлгүүрүүд өдөр бүр 13:00-20:00 цагийн хооронд
+                ажиллаж байна.
+              </div>
+            </div>
+          </div>
+
+          <script>
+            const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+            toggleButtons.forEach((button) => {
+              button.addEventListener("click", () => {
+                const faqItem = button.closest(".faq-item");
+                faqItem.classList.toggle("open");
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div class="flex2">
+        <p class="textt">Салбарууд</p>
+      </div>
+      <div class="peace">
+        <div style="display: flex; flex-direction: column; gap: 35px">
+          <img
+            class="pictures"
+            src="https://cdn.zochil.shop/515d0c24-db93-4bbb-8669-91f017d832b1_t500.jpg"
+            alt=""
+          />
+          <div style="display: flex; flex-direction: column; gap: 25px">
+            <p class="last">ADDRESS: PEACE MALL - KUVCAS</p>
+            <p class="last">SCHEDULE: Даваа-Ням: 13:00-20:00</p>
+            <p class="last">
+              Чингэлтэй дүүрэг, 3-хороо, Peace Mall худалдааны төв, 6 давхар 607
+            </p>
+
+            <p class="last">CONTACT US: 77755688</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 35px">
+          <img
+            class="pictures"
+            src="https://cdn.zochil.shop/bae5424d-cc04-4cef-b2bf-92ee7fed0097_t500.jpg"
+            alt=""
+          />
+          <div style="display: flex; flex-direction: column; gap: 25px">
+            <p class="last">ADDRESS: TARA CENTER - KUVCAS</p>
+            <p class="last">SCHEDULE: Даваа-Ням: 13:00-20:00</p>
+            <p class="last">
+              Хан-Уул дүүрэг, 15-хороо, Tara Center 2 давхар B-235
+            </p>
+            <p class="last">CONTACT US: 77755688</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="header2">
+        <div class="peace">
+          <div style="display: flex; flex-direction: column; gap: 25px">
+            <p class="last">Хүргэлтийн нөхцөл</p>
+            <p class="last">
+              Хэрэглэгч таны захиалсан бүтээгдэхүүн ачааллаас <br />
+              хамаарна 24-48 цагын дотор хүргэгдэх болно.
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 25px">
+            <p class="last">Төлбөрийн нөхцөл</p>
+            <p class="last">
+              Хэрэглэгч та бараа худалдаж авахдаа QPay, Toki, банкны <br />
+              карт гэх мэт хэрэгслүүд ашиглан тооцоо хийх боломжтой.
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 25px">
+            <p class="last">Үйлчилгээний нөхцөл</p>
+            <p class="last">
+              Та бараа бүтээгдэхүүн худалдаж авахаасаа өмнө сонголтоо <br />
+              зөв хийхийг зөвлөж байна, учир нь хэрэглэсэн барааг буцаах <br />
+              боломжгүй болохыг анхаарна уу. Мөн тухайн авсан барааны <br />
+              хэмжээ томдох эсвэл жижигдэх асуудал гарвал 72 цагийн <br />
+              дотор өөр хэмжээгээр солиулах боломжтой байгаа.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="peace">
+        <div style="display: flex; flex-direction: column; gap: 25px">
+          <img
+            class="icons"
+            src="https://cdn.zochil.shop/de1085c9-9677-4409-ba7b-372736043a97_t700.jpg"
+            alt=""
+          />
+          <p class="last">KUVCAS</p>
+          <p class="last">ᴇᴠᴇʀʏᴅᴀʏ ɪꜱ ᴋᴜᴠᴄᴀꜱ ᴅᴀʏ</p>
+          <div style="gap: 10px; display: flex; align-items: center">
+            <button class="circle2">IG</button>
+            <button class="circle2">FB</button>
+            <button class="circle2">YT</button>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 25px">
+          <p class="last">Туслах цэс</p>
+          <p class="last">Бидний тухай</p>
+          <p class="last">Холбоо барих</p>
+          <p class="last">Түгээмэл асуулт</p>
+          <p class="last">Нийтлэлүүд</p>
+          <p class="last">Ажлын байр</p>
+          <p class="last">Салбарууд</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 25px">
+          <p class="last">Бүтээгдэхүүн</p>
+          <p class="last">Бүх бүтээгдэхүүн</p>
+          <p class="last">Онцлох бүтээгдэхүүн</p>
+          <p class="last">Бестселлер</p>
+          <p class="last">Хямдарсан бүтээгдэхүүн</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 25px">
+          <p class="last">Холбоо барих</p>
+          <p class="last">77755688</p>
+          <p class="last">𝙆𝙐𝙑𝘾𝘼𝙎.𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇@𝙂𝙈𝘼𝙄𝙇.𝘾𝙊𝙈</p>
+          <p class="last">
+            𝙋𝙀𝘼𝘾𝙀 𝙈𝘼𝙇𝙇 𝟔𝙏𝙃 𝙁𝙇𝙊𝙊𝙍, 𝟔𝟎𝟕 - 𝙏𝘼𝙍𝘼 𝘾𝙀𝙉𝙏𝙀𝙍 𝟐𝙉𝘿 𝙁𝙇𝙊𝙊𝙍, 𝘽-𝟐𝟑𝟓
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

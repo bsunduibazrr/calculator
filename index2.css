@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #953e3e, #3b8db6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.aram {
+  background-color: white;
+  padding: 30px;
+  background: #953e3e;
+  background: linear-gradient(
+    177deg,
+    rgba(149, 62, 62, 1) 0%,
+    rgba(59, 141, 182, 1) 100%
+  );
+  border-radius: 20px;
+  width: 380px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px 16px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 0px 15px 16px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 0px 0px 15px 16px rgba(0, 0, 0, 0.79);
+  position: absolute;
+  z-index: 5;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.one {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: dashed;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: calc();
+  opacity: 80%;
+  background: linear-gradient(to right, #953e3e, #3b8db6);
+}
+
+.one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+  border-radius: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.one:hover::before {
+  left: 125%;
+}
+
+.one:hover {
+  color: #ffcc00; /* Gold-ish text on hover */
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+.result {
+  width: 380px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: dashed;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top: 600px;
+  left: 30px;
+  cursor: pointer;
+  transition-duration: 150 - ease-in-out;
+  background: linear-gradient(to right, #953e3e, #3b8db6);
+  overflow-x: scroll;
+}
+.result::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+  border-radius: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.result:hover::before {
+  left: 125%;
+}
+
+.result:hover {
+  color: #ffcc00;
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+.fun {
+  font-size: 50px;
+  font-family: fantasy;
+  background: linear-gradient(
+    to right,
+    #953e3e 50%,
+    #ffffff 50%,
+
+    #953e3e 50%,
+    #3b8db6 50%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 5s linear infinite;
+
+  position: absolute;
+  top: 80px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.img {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 180px;
+  left: 820px;
+  transform: rotate(-15deg);
+  animation: swing 3s infinite ease-in-out;
+}
+.img2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 950px;
+  animation: swing 3s infinite ease-in-out;
+}
+.img3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 1320px;
+  animation: swing 3s infinite ease-in-out;
+}
+.img4 {
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  top: 235px;
+  left: 1060px;
+  z-index: 6;
+  animation: swing 3s infinite ease-in-out;
+}
+.img5 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 230px;
+  left: 1270px;
+  z-index: 6;
+  animation: swing 3s infinite ease-in-out;
+}
+.img6 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 550px;
+  left: 785px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+@media only screen and (max-width: 575px) {
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+  .aram {
+    width: 350px;
+    height: 650px;
+  }
+  .fun {
+    font-size: 28px;
+  }
+  .img {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 75px;
+    height: 150px;
+  }
+  .img3 {
+    position: absolute;
+    top: 500px;
+    left: 470px;
+  }
+  .img4 {
+    position: absolute;
+    top: 230px;
+    left: 240px;
+  }
+  .img5 {
+    position: absolute;
+    top: 240px;
+    left: 420px;
+  }
+  .img6 {
+    position: absolute;
+    top: 660px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+  }
+}

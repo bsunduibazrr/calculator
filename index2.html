@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY OWN CALCULATOR</title>
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+
+  <body>
+    <script>
+      const container = document.createElement("div");
+      container.classList.add("aram");
+      const container3 = document.createElement("div");
+      container3.classList.add("result");
+      container3.style.fontSize = "35px";
+      container3.style.overflowX = scroll;
+
+      const container2 = document.createElement("div");
+      container2.classList.add("flex");
+
+      const numberAC = document.createElement("button");
+      numberAC.classList.add("one");
+      container.appendChild(numberAC);
+      numberAC.innerText = "AC";
+
+      const huwi = document.createElement("button");
+      huwi.classList.add("one");
+      container.appendChild(huwi);
+      huwi.innerText = "%";
+
+      const nmhhsh = document.createElement("button");
+      nmhhsh.classList.add("one");
+      container.appendChild(nmhhsh);
+      nmhhsh.innerText = "+/-";
+
+      const nemeh = document.createElement("button");
+      nemeh.classList.add("one");
+      container.appendChild(nemeh);
+      nemeh.innerText = "+";
+
+      const number7 = document.createElement("button");
+      number7.classList.add("one");
+      container.appendChild(number7);
+      number7.innerText = "7";
+
+      const number8 = document.createElement("button");
+      number8.classList.add("one");
+      container.appendChild(number8);
+      number8.innerText = "8";
+
+      const number9 = document.createElement("button");
+      number9.classList.add("one");
+      container.appendChild(number9);
+      number9.innerText = "9";
+
+      const hasah = document.createElement("button");
+      hasah.classList.add("one");
+      container.appendChild(hasah);
+      hasah.innerText = "-";
+
+      const urjih = document.createElement("button");
+      urjih.classList.add("one");
+      container.appendChild(urjih);
+      urjih.innerHTML = "*";
+
+      const number4 = document.createElement("button");
+      number4.classList.add("one");
+      container.appendChild(number4);
+      number4.innerHTML = "4";
+
+      const number5 = document.createElement("button");
+      number5.classList.add("one");
+      container.appendChild(number5);
+      number5.innerText = "5";
+
+      const number6 = document.createElement("button");
+      number6.classList.add("one");
+      container.appendChild(number6);
+      number6.innerText = "6";
+
+      const number = document.createElement("button");
+      number.classList.add("one");
+      container.appendChild(number);
+      number.innerText = "1";
+
+      const number2 = document.createElement("button");
+      number2.classList.add("one");
+      container.appendChild(number2);
+      number2.innerText = "2";
+
+      const number3 = document.createElement("button");
+      number3.classList.add("one");
+      container.appendChild(number3);
+      number3.innerHTML = "3";
+
+      const huwaah = document.createElement("button");
+      huwaah.classList.add("one");
+      container.appendChild(huwaah);
+      huwaah.innerText = "/";
+
+      const tseg = document.createElement("button");
+      tseg.classList.add("one");
+      container.appendChild(tseg);
+      tseg.innerText = ".";
+
+      const number0 = document.createElement("button");
+      number0.classList.add("one");
+      container.appendChild(number0);
+      number0.innerText = "0";
+
+      const haalt = document.createElement("button");
+      haalt.classList.add("one");
+      container.appendChild(haalt);
+      haalt.innerText = "( )";
+
+      const tentsuu = document.createElement("button");
+      tentsuu.classList.add("one");
+      container.appendChild(tentsuu);
+      tentsuu.innerText = "=";
+
+      let tmp;
+      function clickedNumber1() {
+        tmp = 1;
+        container3.innerHTML += "1";
+      }
+      number.onclick = clickedNumber1;
+
+      let tmp2;
+      function clickedNumber2() {
+        tmp2 = 2;
+        container3.innerHTML += "2";
+      }
+      number2.onclick = clickedNumber2;
+
+      let tmp3;
+      function clickedNumber3() {
+        tmp3 = 3;
+        container3.innerHTML += "3";
+      }
+      number3.onclick = clickedNumber3;
+
+      let tmp4;
+      function clickedNumber4() {
+        tmp4 = 4;
+        container3.innerHTML += "4";
+      }
+      number4.onclick = clickedNumber4;
+
+      let tmp5;
+      function clickedNumber5() {
+        tmp5 = 5;
+        container3.innerHTML += "5";
+      }
+      number5.onclick = clickedNumber5;
+
+      let tmp6;
+      function clickedNumber6() {
+        tmp6 = 6;
+        container3.innerHTML += "6";
+      }
+      number6.onclick = clickedNumber6;
+
+      let tmp7;
+      function clickedNumber7() {
+        tmp7 = 7;
+        container3.innerHTML += "7";
+      }
+      number7.onclick = clickedNumber7;
+
+      let tmp8;
+      function clickedNumber8() {
+        tmp8 = 8;
+        container3.innerHTML += "8";
+      }
+      number8.onclick = clickedNumber8;
+
+      let tmp9;
+      function clickedNumber9() {
+        tmp9 = 9;
+        container3.innerHTML += "9";
+      }
+      number9.onclick = clickedNumber9;
+
+      let tmp0;
+      function clickedNumber0() {
+        tmp0 = 0;
+        container3.innerHTML += "0";
+      }
+      number0.onclick = clickedNumber0;
+
+      let tmp10;
+      function clickedhuwaah() {
+        tmp10 = "/";
+        container3.innerHTML += "/";
+      }
+      huwaah.onclick = clickedhuwaah;
+
+      let tmp11;
+      function clickedurjih() {
+        tmp11 = "*";
+        container3.innerHTML += "*";
+      }
+      urjih.onclick = clickedurjih;
+
+      let tmp12;
+      function clickednemeh() {
+        tmp12 = "+";
+        container3.innerHTML += "+";
+      }
+      nemeh.onclick = clickednemeh;
+
+      let tmp13;
+      function clickedhasah() {
+        tmp11 = "-";
+        container3.innerHTML += "-";
+      }
+      hasah.onclick = clickedhasah;
+
+      let tmp14;
+      function clickedtentsuu() {
+        tmp14 = "=";
+        container3.innerHTML = eval(container3.innerHTML);
+      }
+      tentsuu.onclick = clickedtentsuu;
+
+      let tmp15;
+      function clickedtseg() {
+        tmp15 = ".";
+        container3.innerHTML += ".";
+      }
+      tseg.onclick = clickedtseg;
+
+      let tmp16;
+      function clickedhaalt() {
+        tmp16 = "( )";
+        container3.innerHTML += "( )";
+      }
+      haalt.onclick = clickedhaalt;
+
+      let tmp17;
+      function clickedhuwi() {
+        tmp17 = "%";
+        container3.innerHTML = eval(container3.innerHTML / 100);
+      }
+      huwi.onclick = clickedhuwi;
+
+      let tmp18;
+      function clickedAC() {
+        tmp18 = "";
+        container3.innerHTML = "";
+      }
+      numberAC.onclick = clickedAC;
+
+      let tmp19;
+      function clickednmhhsh() {
+        tmp19 = "-";
+        container3.innerHTML = eval(container3.innerHTM / -1);
+      }
+      nmhhsh.onclick = clickednmhhsh;
+
+      function appendChild(value) {
+        container3.innerText += value;
+      }
+      function number_ac() {
+        container3.innerHTML = "";
+      }
+
+      function equal(value) {
+        container3.innerText += value;
+      }
+
+      container2.appendChild(numberAC);
+      container2.appendChild(huwi);
+      container2.appendChild(nmhhsh);
+      container2.appendChild(nemeh);
+      container2.appendChild(number7);
+      container2.appendChild(number8);
+      container2.appendChild(number9);
+      container2.appendChild(hasah);
+      container2.appendChild(number4);
+      container2.appendChild(number5);
+      container2.appendChild(number6);
+      container2.appendChild(urjih);
+      container2.appendChild(number);
+      container2.appendChild(number2);
+      container2.appendChild(number3);
+      container2.appendChild(huwaah);
+      container2.appendChild(tseg);
+      container2.appendChild(number0);
+      container2.appendChild(haalt);
+      container2.appendChild(tentsuu);
+      container.appendChild(container3);
+      container.appendChild(container2);
+
+      document.body.appendChild(container);
+      const message = document.createElement("h1");
+      message.classList.add("fun");
+      message.innerText = "HAVE FUN WITH MY OWN CALCULATOR";
+      document.body.appendChild(message);
+
+      const image = document.createElement("img");
+      image.classList.add("img");
+      image.src =
+        "https://i.pinimg.com/originals/80/49/5e/80495e40d0446f705ba61543a1680bc3.png";
+      document.body.appendChild(image);
+
+      const image2 = document.createElement("img");
+      image2.classList.add("img2");
+      image2.src =
+        "https://wallpapers.com/images/hd/swinging-spider-man-cartoon-jmgvvpr07e3plfaj-2.jpg";
+      document.body.appendChild(image2);
+
+      const image3 = document.createElement("img");
+      image3.classList.add("img3");
+      image3.src =
+        "https://www.freeiconspng.com/uploads/spiderman-climbing-wall-png-images-6.png";
+      document.body.appendChild(image3);
+
+      const image4 = document.createElement("img");
+      image4.classList.add("img4");
+      image4.src =
+        "https://wallpapers.com/images/thumbnail/spider-man-cartoon-hanging-upside-down-ndnncy9pmo9wejyn-2.webp";
+      document.body.appendChild(image4);
+
+      const image5 = document.createElement("img");
+      image5.classList.add("img5");
+      image5.src =
+        "https://cdn.freebiesupply.com/logos/large/2x/spider-man-4-logo-svg-vector.svg";
+      document.body.appendChild(image5);
+
+      const image6 = document.createElement("img");
+      image6.classList.add("img6");
+      image6.src =
+        "https://clipart.info/images/ccovers/1559828310spiderman-marvel-comics-png-15.png";
+      document.body.appendChild(image6);
+    </script>
+  </body>
+</html>
